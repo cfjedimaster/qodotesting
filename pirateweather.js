@@ -4,7 +4,7 @@ let lng = -92.033;
 
 
 async function getPirateWeather(lat, lng, key) {
-    let resp = await fetch(`https://api.pirateweather.net/forecast/${pirate_api_key}/${lat},${lng}?units=us&exclude=currently,minutely,hourly,alerts`);
+    let resp = await fetch(`https://api.pirateweather.net/forecast/${key}/${lat},${lng}?units=us&exclude=currently,minutely,hourly,alerts`);
 	return await resp.json();
 }
 
